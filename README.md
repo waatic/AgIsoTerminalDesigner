@@ -1,3 +1,17 @@
+> **About this fork (waatic/AgIsoTerminalDesigner, branch `waatic`)**
+>
+> We use the designer for our own ISOBUS VT pools and publish what we fix along the way.
+> Upstream remains [Open-Agriculture/AgIsoTerminalDesigner](https://github.com/Open-Agriculture/AgIsoTerminalDesigner);
+> `main` here mirrors it unchanged. The `waatic` branch is:
+>
+> - [PR #40](https://github.com/Open-Agriculture/AgIsoTerminalDesigner/pull/40) (edit every object attribute, VT2–VT6, `aitd` CLI), not yet merged upstream;
+> - built against [waatic/AgIsoStack-rs `fix/object-pointer-written-twice`](https://github.com/waatic/AgIsoStack-rs/tree/fix/object-pointer-written-twice):
+>   every Object Pointer was written twice when exporting an IOP (duplicate object IDs);
+> - plus `tests/iop_roundtrip.rs`, which checks that your own `.iop` files import and export unchanged
+>   as VT3 and VT6 (see the comment at the top of the file).
+>
+> Fixes are offered upstream; once they are merged this branch goes back to the upstream versions.
+
 <div align="center">
 
 # AgIsoTerminalDesigner 🚜
