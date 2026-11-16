@@ -16,7 +16,9 @@ clap = { version = "4", features = ["derive"] }
 egui = "0.32"
 egui_dock = { version = "0.17", features = ["serde"] }
 eframe = { version = "0.32", features = ["persistence"] }
-ag-iso-stack = { git = "https://github.com/Open-Agriculture/AgIsoStack-rs", rev = "c59744087cc3b0ae01c8fe476dcf444182cd5182" }
+# c597440 + "Write Object Pointer objects once" (waatic/AgIsoStack-rs fix/object-pointer-written-twice).
+# Switch back to Open-Agriculture once that fix is merged upstream.
+ag-iso-stack = { git = "https://github.com/waatic/AgIsoStack-rs", rev = "3d643390ae4334d493219af54fd3f70b19193a2e" }
 rfd = "0.13"
 image = "0.25.1"
 png = "0.18"
